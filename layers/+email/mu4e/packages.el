@@ -162,6 +162,7 @@
   "If mu4e-use-maildirs-extension is non-nil, set
 mu4e-use-maildirs-extension-load to be evaluated after mu4e has been loaded."
   (use-package mu4e-maildirs-extension
+    :after mu4e
     :if mu4e-use-maildirs-extension
     :init (with-eval-after-load 'mu4e (mu4e-maildirs-extension-load))))
 
